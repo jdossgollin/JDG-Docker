@@ -8,3 +8,5 @@ wget --no-check-certificate https://iri.columbia.edu/climate/tools/cpt/source/CP
 tar xvzf CPT.15.5.12.tar.gz &&\
 cd CPT/15.5.12 &&\
 make
+
+CMD /bin/bash -c "cd /CPT/15.5.12 && ./CPT.x"
