@@ -1,5 +1,7 @@
-FROM kaggle/python
+FROM continuumio/miniconda3
 
-RUN conda install -yc conda-forge cartopy feather-format netCDF4 eofs &&\
-  conda install -y xarray &&\
-  pip install git+git://github.com/jdossgollin/jdgpy@master
+RUN conda install -y argparse calendar datetime matplotlib numpy pandas scikit-learn xarray
+
+RUN conda install -y -c conda-forge cartopy feather-format netCDF4 eofs
+
+RUN  pip install git+git://github.com/jdossgollin/jdgpy@master
