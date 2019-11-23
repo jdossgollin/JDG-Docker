@@ -3,7 +3,7 @@ asn1crypto==0.24.0
 astor==0.8.0
 backcall==0.1.0
 cloudpickle==1.2.2
-cryptography==2.1.4
+cryptography==2.3
 Cython==0.29.14
 decorator==4.4.1
 future==0.18.2
