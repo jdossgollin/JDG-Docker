@@ -4,4 +4,4 @@ COPY leveesim/requirements.txt /tmp/requirements.txt
 RUN apt-get --yes install git libsm6 libxrender1 libfontconfig1
 RUN pip install -r /tmp/requirements.txt &&\
     pip install https://github.com/hill-a/stable-baselines/archive/e315ebecbfd26225522a2e63a6bbd440c1df7f01.zip
-RUN pip install https://github.com/jdossgollin/leveesim/archive/52d7e272a82348358403ba880f3cbda51cb78ca6.zip
+RUN pip install https://github.com/jdossgollin/leveesim/archive/7e000a3e3e17bc0621998f738a124ad7beecc8cf.zip
