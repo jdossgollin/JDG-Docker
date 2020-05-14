@@ -1,11 +1,13 @@
 FROM tianon/latex
 
-# Install Fira Sans font
+# lato & FA installed explicitly but get more too
 RUN apt-get update \
     && apt-get install -y \
     fonts-font-awesome \
+    fonts-lato \
     unzip \
-    wget
+    wget \
+    && apt-get install -y ^fonts-* 
 
 RUN wget https://github.com/bBoxType/FiraSans/archive/master.zip -O fira.zip \
     && unzip fira.zip -d FiraSans-master \
