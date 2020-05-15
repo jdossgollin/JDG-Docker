@@ -17,3 +17,7 @@ RUN wget https://github.com/bBoxType/FiraSans/archive/master.zip -O fira.zip \
     && mkdir -p /usr/share/fonts/truetype/fira \
     && find FiraSans-master/ -name "*.ttf" -exec cp {} /usr/share/fonts/truetype/fira/ \; \
     && rm -rf fira
+
+RUN wget https://github.com/diogo-fernan/academicons/blob/master/academicons.ttf \
+    && mkdir -p /usr/share/fonts/truetype/academicons \
+    && mv academicons.ttf /usr/share/fonts/truetype/academicons
