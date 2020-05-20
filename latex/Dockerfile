@@ -19,5 +19,6 @@ RUN wget https://github.com/bBoxType/FiraSans/archive/master.zip -O fira.zip \
     && rm -rf fira
 
 RUN apt-get install -y xzdec \
+    && tlmgr init-usertree \
     && tlmgr update --self \
     && tlmgr install academicons
